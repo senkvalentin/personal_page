@@ -5,18 +5,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script type="text/javascript" src="../html/script/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      $(document).ready(() => {
+  let $navlinks = $('.nav-link').not('.dropdown-toggle');
+  // console.log($navlinks)
+  $navlinks.click((e) => {
+    $(e.target).closest('.navbar').find('.navbar-collapse').collapse('toggle')
+  })
+})
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="./img/logo - title 50x50 px.jpeg">
     <title>Valentin Senk</title>
   </head>
   <body>
   <div data-spy="scroll" data-target=".navbar" data-offset="50">
       <div class="container">
-          <div class="row"><nav class="navbar fixed-top navbar navbar-expand-lg navbar-light bg-light">
+          <div class="row">
+            <nav class="navbar fixed-top navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="/"><img src="./img/Dimensionen einstellen 50x50 px.png" alt="">
                 </a>
@@ -53,6 +63,7 @@
           <div class="row py-5">
         </div>
           <div class="row py-5">
+            <!--
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -61,13 +72,13 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./img/fender-2409274_1920.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/musical-background-2886886_1920.png" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
                     <img src="./img/guitars-2912447_1920.jpg" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./img/musical-background-2886886_1920.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/lion-6476494.png" class="d-block w-100" alt="...">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -79,6 +90,8 @@
                   <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            -->
+            <img src="./img/lion-6476494.png" alt="" srcset="">
           </div>
             <div id="aboutMe">
               <div class="row py-5">
@@ -89,9 +102,7 @@
                 <p class="w-responsive mx-auto mb-5">
                   Mein Name ist Valentin Senk und ich besuche derzeit die  <a href="https://www.htl-villach.at/" class="link-secondary" target="blank">HTL Villach</a>  mit dem Schwerpunkt Medientechnik.
                   Außerdem interessiere ich mich sehr für Musik. <br>Ich höre vor allem Rock, Hard Rock und Metal und spiele selbst E-Gitarre.   <br>
-                  <h5 class="h5-responsive font-weight-bold my-4">Hier meine Lieblingsplaylist:</h5>
-                  <div class="row">
-                    <iframe src="https://open.spotify.com/embed/playlist/4ORU06gFgocRQH0JoaN6AM" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  
                 </p>
             </div>
           </div>
