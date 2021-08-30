@@ -114,7 +114,7 @@ window.onload = function(){
   //this is the function that projects 3D coordinates to the 2D canvas
   function project3D(x,y,z) {
     var xRotQz=x*Math.cos(Qz)+y*Math.sin(Qz);
-    var yRotQz=y*Math.cos(Qz)-x*Math.sin(Qz);
+        var yRotQz=y*Math.cos(Qz)-x*Math.sin(Qz);
     var zRotQz=z;
     var xRotQzQx=xRotQz;
     var yRotQzQx=yRotQz*Math.cos(Qx)+zRotQz*Math.sin(Qx);
@@ -158,7 +158,7 @@ window.onload = function(){
       ctx.moveTo(verticesPixLoc[j][0],verticesPixLoc[j][1]);
       ctx.lineTo(verticesPixLoc[j+1][0],verticesPixLoc[j+1][1]);
       ctx.stroke();
-      outputVert.innerHTML = verticesPixLoc[j][0] + '<div>' + verticesPixLoc[j][1] + '<div>' + verticesPixLoc[j+1][0] + '<div>' + verticesPixLoc[j+1][1] + '<div>'; 
+      // outputVert.innerHTML = verticesPixLoc[j][0] + '<div>' + verticesPixLoc[j][1] + '<div>' + verticesPixLoc[j+1][0] + '<div>' + verticesPixLoc[j+1][1] + '<div>'; 
     }
       
   }

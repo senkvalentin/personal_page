@@ -1,0 +1,21 @@
+.l{
+        float: right;
+}
+
+.textLeft{
+    padding-left: 1em;
+}
+
+@media only screen and (max-width: 50em){
+    .imgCubeCenter {
+        width: 20em;
+    }
+  }
+
+.linkBP {
+    text-decoration: none;
+}
+
+.linkBP:hover {
+    color: white;
+}
