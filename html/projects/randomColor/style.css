@@ -1,0 +1,25 @@
+#info {
+    padding: 3em;
+    margin: 3em;
+}
+
+#change {
+    margin: 3em;
+    margin-left: 25%;
+    width: 50%;
+    transform: scale(2);
+}
+
+.show {
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+    width: 50%;
+    height: 1.5em;
+    border-radius: 1em;
+    border-style: solid;
+}
+
+.divTwoCol{
+    padding-right: 2em;
+    width: 50%;
+}

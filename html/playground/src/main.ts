@@ -15,7 +15,8 @@ const result = numbers.reduce((prev, curr) => prev + curr);
 
 console.log(`Result = ${result}`);
 
-/*
+
+
 const vali = new Human('Valentin Senk');
 const senkHaus = new Haus('red', 'Himmelberg', vali);
 
@@ -30,5 +31,6 @@ senkHaus.ring();
 
 senkHaus.rightNeighbour = hinkelHaus;
 
-console.log(senkHaus);
-*/
+function printHouse() {
+    console.log(senkHaus);
+}
