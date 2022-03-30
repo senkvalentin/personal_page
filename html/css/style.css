@@ -1,3 +1,8 @@
 .headerDownload {
     margin-bottom: 0em;
 }
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+ }
