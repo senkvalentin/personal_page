@@ -1,10 +1,10 @@
 /*
 Project: Tic - Tac - Toe
 Author:  Valentin Senk
-Date:    10. 07. 2021
+Date:    10. 07. 2023
 
 https://www.senkvalentin.com/
-https://vali.1070.exposed/
+senkvalentin.com
 */
 'use strict';
 

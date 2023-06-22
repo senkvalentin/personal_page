@@ -1,7 +1,7 @@
 /*
 Project: map3dto2d
 Author:  Valentin Senk
-Date:    26.  07. 2021
+Date:    26.  07. 2023
 */
 'use strict';
 
