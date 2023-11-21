@@ -15,11 +15,31 @@ html, body {
 }
 
 .highlightName {
-    color: #3470BF;
+    color: #e45c3a;
 }
 
 .box{
-    background-color: #F2F2F2;
+    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cardText{
+    padding: 1em;
+}
+
+.cardImg{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cardTitle {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 150%;
+    line-height: 100%;
 }
 
 .headerLink {
@@ -29,4 +49,121 @@ html, body {
     line-height: 100%;
     color: #5f5959;
     text-decoration: none;
+}
+
+.subHeadingCard {
+    font-weight: bold;
+    font-size: large;
+}
+
+.subHeadingSite {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 270%;
+    line-height: 100%;
+    padding: 1em;
+    color: rgb(43, 42, 42);
+    border-color: rgb(44, 44, 43);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 4px;
+}
+
+.aboutTextTitle1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 140%;
+    line-height: 100%;
+}
+.aboutTextTitle2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 110%;
+    line-height: 100%;
+}
+
+
+.cardParagraph {
+    font-weight:normal;
+    font-size: 110%;
+    line-height: 110%;
+}
+
+.cardHyperlink {
+    font-weight:normal;
+    font-size: 110%;
+    line-height: 110%;
+}
+
+.hashtagList{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 120%;
+    padding-bottom: 3em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hashtag {
+    padding: 10px;
+    background-color: #F2CF63;
+    color: rgb(43, 42, 42);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    border-color: rgb(44, 44, 43);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 4px;
+}
+
+.textAboutMe {
+    font-size: 140%;
+}
+
+.containerElement {
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center -50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.headerTitle {
+    top: 50%;
+    left: 50%;
+}
+
+.headerLink {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
+.projectBox {
+    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.projectSubheading {
+    padding: .5em;
+}
+
+.hashtag:hover {
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    background-color: #3470BF;
+}
+
+.nav-link {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 150%;
+    line-height: 100%;
 }

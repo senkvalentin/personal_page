@@ -16,10 +16,18 @@
     $(e.target).closest('.navbar').find('.navbar-collapse').collapse('toggle')
   })
 })
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        let scrollTop = $(this).scrollTop();
+        $('.parallax').css('background-position', 'center ' + -(scrollTop / 4) + 'px');
+    });
+});
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./img/logo - title 50x50 px.jpeg">
+    <link rel="shortcut icon" href="./img/icon.png">
     <title>Valentin Senk</title>
   </head>
   <body>
@@ -28,7 +36,7 @@
           <div class="row">
             <nav class="navbar fixed-top navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="/"><img src="./img/Dimensionen einstellen 50x50 px.png" alt="">
+              <a class="navbar-brand" href="/"><img src="./img/logo.png" alt="">
                 </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded = "false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -49,76 +57,118 @@
               </div>
             </div>
           </nav></div>
-          <div class="row py-5">
+          <div class="row py-5" style="margin-top: 6em;">
         </div>
-          <div class="row py-5 parallax">
-            <p class="headerTitle" id="header">Hi, my name is <span class="highlightName"> Valentin Senk </span> <br>I design and develop.</p>
-            <a href="#projectsList" class="headerLink">Let me show You...</a>
-              <img src="./img/lion-6476494.png" alt="" srcset="" class="">
-            </div>
+        <div class="row py-5 parallax" style="background-image: url('./img/bg-img.png');">
+          <p class="headerTitle" id="header">HI, MY NAME IS <span class="highlightName"> VALENTIN SENK.</span> <br>I DESIGN AND DEVELOP.</p>
+          <a href="#projectsList" class="headerLink">Let me show You...</a>
+          <img src="./img/lion-6476494.png" alt="" srcset="" class="">
+      </div>
+      
             <div id="aboutMe" class="text-box">
               <div class="row py-5">
-                <hr class="mt-2 mb-3"/>
             </div>
-            <div class="row">
-                <h2 class="h1-responsive font-weight-bold text-center my-4">About me</h2>
-            </div>
+            <div class="row containerElement">
+                <h2 class="text-center my-4 subHeadingSite" style="
+                background-color: #F25C5C;">About me</h2>
                 <div class="row mx-auto">
-                    <div class="col"><img src="img/290809773_726749315278100_6724925317801543196_n.jpg" alt="" class="rounded-circle mx-auto d-block py-5"></div>
+                    <div class="col d-flex justify-content-center align-items-center"><img src="img/me.png" alt="" class="rounded-circle mx-auto d-block py-5"></div>
                     <div class="col-sm">
-                        <p class="w-responsive mx-auto mb-5 py-5">
-                         My name is Valentin Senk, I'm currently attending the <a href="https://www.htl-villach.at/" class="link-secondary" target="blank">HTL Villach</a> and I'm very interested in web design.
-                        If you have any questions, please feel free to contact  <a href="mailto:q@senkvalentin.com/">me</a> :)
+                        <p class="w-responsive mx-auto mb-5 py-5 textAboutMe box">
+                          <span class="aboutTextTitle1">
+                        👋 Hi, I'm Valentin Senk,  </span> <br> <span class="aboutTextTitle2">a  <span class="highlightName">Software Developer | Web-Designer | Graphic-Designer </span>
+                        based in Austria. </span><br>
+                        Currently I'm attending the <a href="https://www.htl-villach.at/" class="link-secondary" target="blank">HTL Villach</a> and outside of school,
+                        I'm always tinkering around and developing new projects and ideas.
+                        On this page you will find a small selection of them.
+                       <br>	If you have any questions, please feel free to contact  <a href="mailto:q@senkvalentin.com/">me</a> :)
                           
                         </p></div>
             </div>
+            <div class="hashtagList">
+              <p>
+                <span class="hashtag">#JavaScript</span>
+                <span class="hashtag">#TypeScript</span>
+                <span class="hashtag">#MySQL</span>
+                <span class="hashtag">#React</span>
+                <span class="hashtag">#Angular</span>
+                <span class="hashtag">#Laravel</span>
+                <span class="hashtag">#NodeJS</span>
+                <span class="hashtag">#Web-Hosting</span>
+                <span class="hashtag">#Logo-Design</span>
+                <span class="hashtag">#UI-Design</span>
+              </p>
+            </div>
+          </div>
+
           </div>
           <div id="projectsList">
-            <div class="row py-5">
-                <hr class="mt-2 mb-3"/>
-            </div>
-            <div class="">
-                <h2 class="h1-responsive font-weight-bold text-center my-4">My Projects</h2>
+            <div class="row py-5"></div>
+        
+            <div class="containerElement">
+                <h2 class="text-center my-4 subHeadingSite" style="background-color: #3470BF; color: white;">My Projects</h2>
+                <div class="projectBox">
                 <div class="row">
-                    <h4 class="h1-responsive font-weight-bold">Latest:</h4>
+                    <h4 class="h1-responsive text-center font-weight-bold projectSubheading">Latest:</h4>
                 </div>
-                    <div class="row mx-auto">
-                        <div class="col">
-                            <p class="w-responsive mx-auto mb-5">
-                                Website for a restaurant: <a href="https://forellenhof-pluch.at/">https://forellenhof-pluch.at/</a> <br>
-                                using Bootstrap.
-                                <br> + Images, new SVG-Logo,...
-                            </p></div>
-                            
-                        <div class="col"><img src="img/final_terasse-1120.jpg" alt="" class=" mx-auto d-block"></div>
-                </div>
-                <div class="row" >
-                    <h4 class="h1-responsive font-weight-bold" style="padding-top: 4em;">Other projects:</h4>
-                </div>
-                    <div class="row mx-auto">
-                        <div class="col">
-                            <p class="w-responsive mx-auto">
+        
+                <div class="row mx-auto box" >
+                    <div class="col-sm cardText">
+                        <p class="w-responsive mx-auto mb-5">
+                            <span class="cardTitle"> Website for a restaurant: </span> <br>
+                            <a href="https://forellenhof-pluch.at/" class="cardHyperlink">https://forellenhof-pluch.at/</a>
+                            <div class="cardParagraph">
                                 <ul>
-                                    <li> <a href="/projects/tic-tac-toe/tic-index.html">tic-tac-toe game with bot</a></li>
-                                    <li> <a href="/projects/map3dto2d/map3d-index.html"> <a href="">Mapping a 3D-object to 2d coordinates</a></a></li>
-                                    <li><a href="/projects/counter/index.html">online counter</a></li>
-                                    <li><a href="/projects/collatzconjecture/collatz.html">Collatz Conjecture - Javascript Algorithm Showcase</a></li>
-                                    <li><a href="/projects/randomColor/index.html">Random Color and Opposite Color Generator (hex + rgb)</a></li>
-                                    <li><a href="http://127.0.0.1:5500/projects/random%20team/randTeam-index.html">Assign player to random team</a></li>
-                                    <li><a href="html/projectPreview.html">...</a></li>
+                                    <li> Built using the Bootstrap framework, HTML and CSS.</li>
+                                    <li>New Images and new SVG-Logo</li>
+                                    <li>Search-Engine-Optimization</li>
+                                    <li>Berücksichtigen der DSGVO-Verordnung</li>
                                 </ul>
-                                <a href="html/projectPreview.html" class="link-primary">View all projects</a> <br>
-                        <a href="html/downloadProjects.html" class="link-secondary">Download projects</a>
-                        
-
-                            </p></div>
-                            
-                        <div class="col"><img src="img/map2d3d-img.PNG" alt="" class=" mx-auto d-block" height="300px"></div>
+                                <span class="subHeadingCard">Meine Learnings:</span><br>
+                                Berücksichtigen der DSGVO-Verordnung, Performance mithilfer verschiedener Tools monitoren und optimieren, SEO mit Google Search Console
+                            </div>
+                        </p>
+                    </div>
+        
+                    <div class="col-sm justify-content-center align-self-center">
+                        <img class="cardImg img-thumbnail" src="img/final_terasse-1120.jpg" alt="" class=" mx-auto d-block">
+                    </div>
                 </div>
-          </div>
+        
+                <div class="row py-5"></div>
+        
+                <div class="row">
+                    <h4 class="h1-responsive text-center font-weight-bold projectSubheading">View my other projects:</h4>
+                </div>
+        
+                <div class="row mx-auto box">
+                    <div class="col-sm">
+                        <p class="w-responsive mx-auto cardParagraph">
+                            <span class="cardTitle"> A collection of my most recent projects:</span>
+                            <ul>
+                                <li><a href="/projects/tic-tac-toe/tic-index.html" class="cardHyperlink">tic-tac-toe game with bot</a></li>
+                                <li><a href="/projects/map3dto2d/map3d-index.html" class="cardHyperlink">Mapping a 3D-object to 2d coordinates</a></li>
+                                <li><a href="/projects/counter/index.html" class="cardHyperlink">online counter</a></li>
+                                <li><a href="/projects/collatzconjecture/collatz.html" class="cardHyperlink">Collatz Conjecture - Javascript Algorithm Showcase</a></li>
+                                <li><a href="/projects/randomColor/index.html" class="cardHyperlink">Random Color and Opposite Color Generator (hex + rgb)</a></li>
+                                <li><a href="/projects/random%20team/randTeam-index.html" class="cardHyperlink">Assign player to random team</a></li>
+                                <li><a href="html/projectPreview.html" class="cardHyperlink">...</a></li>
+                            </ul>
+                            <a href="html/projectPreview.html" class="link-primary cardHyperlink">View all projects</a> <br>
+                            <a href="html/downloadProjects.html" class="link-secondary cardHyperlink">Download projects</a>
+                        </p>
+                    </div>
+        
+                    <div class="col-sm justify-content-center align-self-center">
+                        <img src="img/map2d3d-img.PNG" alt="" class="cardImg img-thumbnail">
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
           
             <div class="row py-5">
-              <hr class="mt-2 mb-3"/>
           </div>
     </div>
   </div>
@@ -174,7 +224,7 @@
               <i class="fas fa-gem me-3"></i>Valentin Senk
             </h6>
             <p>
-              Java-Script, PHP, MySQL, HTML5, CSS3, Bootstrap5, Untity
+              JavaScript, PHP, MySQL, HTML5, CSS3, Bootstrap5, Angular, React, UI-Design
             </p>
           </div>
           <!-- Grid column -->
