@@ -6,3 +6,27 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
  }
+
+.headerTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 500%;
+    line-height: 100%;
+}
+
+.highlightName {
+    color: #3470BF;
+}
+
+.box{
+    background-color: #F2F2F2;
+}
+
+.headerLink {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 200%;
+    line-height: 100%;
+    color: #5f5959;
+    text-decoration: none;
+}
